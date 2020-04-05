@@ -5,16 +5,19 @@ import Form from './components/classes/form'
 import Blog from './components/classes/blog'
 import LogControl from './components/classes/logcontrol'
 import Button from './components/classes/button'
+import Clock from './components/classes/clock'
 
 function App() {
   return (
     <div className="App">
-      <SingUpDialog />
-      <Thermostat />
-      <Form />
-      <Blog />
-      <LogControl />
+      <h1>Hello world!</h1>
+      <Clock />
       <Button />
+      <LogControl />
+      <Blog />
+      <Form />
+      <Thermostat />
+      <SingUpDialog />
     </div>
   )
 }
