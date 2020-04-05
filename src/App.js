@@ -12,6 +12,8 @@ function App() {
     <div className="App">
       <h1>Hello world!</h1>
       <Clock />
+      <Clock />
+      <Clock />
       <Button />
       <LogControl />
       <Blog />
