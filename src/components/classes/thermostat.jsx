@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component, Fragment } from 'react'
 import TemperatureInput from './temperatureInput'
 import BoilingVeredict from '../functions/boilingVeredict'
 
-class Thermostat extends React.Component {
+class Thermostat extends Component {
 
   constructor(props){
     super(props)
@@ -37,7 +37,7 @@ class Thermostat extends React.Component {
     const fahrenheit = scale.startsWith('c') ? tryConvert(temperature,toFahrenheit) : temperature
 
     return (
-      <div>
+      <Fragment>
         <TemperatureInput 
           scale='c'
           temperature={celcius}
@@ -49,7 +49,7 @@ class Thermostat extends React.Component {
           onTemperatureChange={this.handleFarenheitChange}
         />
         <BoilingVeredict celcius={parseFloat(celcius)}/>
-      </div>
+      </Fragment>
     )
   }
 }

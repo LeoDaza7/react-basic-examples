@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Fragment, Component } from 'react'
 
-class Form extends React.Component {
+class Form extends Component {
 
   constructor(props) {
     super(props)
@@ -65,7 +65,7 @@ class Form extends React.Component {
 
   render() { 
     return ( 
-      <div>
+      <Fragment>
         {/* basic form */}
         <form onSubmit={this.handleNameSubmit}>
           <label>
@@ -120,9 +120,8 @@ class Form extends React.Component {
             />
           </label>
         </form>
-      </div>
-      
-     )
+      </Fragment>
+    )
   }
 }
  

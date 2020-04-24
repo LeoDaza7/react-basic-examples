@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Fragment, Component } from 'react'
 import SideBar from '../functions/sidebar'
 
-class Blog extends React.Component {
+class Blog extends Component {
 
   constructor(props) {
     super(props)
@@ -15,10 +15,9 @@ class Blog extends React.Component {
 
   render() {
     return (
-    <div>
+    <Fragment>
       <SideBar content={this.state.posts}/>
-      <hr />
-    </div>
+    </Fragment>
     )
   }
 

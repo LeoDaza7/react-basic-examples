@@ -7,7 +7,7 @@ function WarningBanner(props) {
   }
   return (
     <div className="warning">
-      <h1>Warning!</h1>
+      <h1 style={{color: 'red'}}>Warning!</h1>
     </div>
   )
 }

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Fragment, Component } from 'react'
 import FormatDate from '../functions/format'
 
-class Clock extends React.Component {
+class Clock extends Component {
 
   constructor(props){
     super(props)
@@ -27,9 +27,9 @@ class Clock extends React.Component {
 
   render(){
       return(
-        <div>
+        <Fragment>
           <FormatDate date={ this.state.date }/>
-        </div>
+        </Fragment>
       )
   }
 

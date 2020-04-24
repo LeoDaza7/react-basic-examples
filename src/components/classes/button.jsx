@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-class Button extends React.Component {
+class Button extends Component {
 
   constructor(props){
     super(props)
     this.state = {
       isOn: true  
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(){
@@ -18,7 +19,7 @@ class Button extends React.Component {
 
   render(){
     return(
-      <button onClick={ () => this.handleClick() }>
+      <button onClick={ this.handleClick }>
         { this.state.isOn ? 'ON' : 'OFF' }
       </button>
     )

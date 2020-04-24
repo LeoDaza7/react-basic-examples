@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component, Fragment } from 'react'
 import Dialog from '../functions/dialog'
 import WelcomeDialog from '../functions/welcomeDialog'
 import SplitPane from '../functions/splitPane'
 
-class SingUpDialog extends React.Component {
+class SingUpDialog extends Component {
 
   constructor(props){
     super(props)
@@ -26,7 +26,7 @@ class SingUpDialog extends React.Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <WelcomeDialog />
         <SplitPane
           left={
@@ -48,7 +48,7 @@ class SingUpDialog extends React.Component {
             Sign me up!
           </button>
         </Dialog>       
-      </div>
+      </Fragment>
     )
   }
 

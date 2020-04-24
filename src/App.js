@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import SingUpDialog from './components/classes/signUpDialog'
 import Thermostat from './components/classes/thermostat'
 import Form from './components/classes/form'
@@ -9,18 +9,22 @@ import Clock from './components/classes/clock'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world!</h1>
+    <Fragment>
+      <h2>State and Lifecycle</h2>
       <Clock />
-      <Clock />
-      <Clock />
+      <h2>Handling Events</h2>
       <Button />
+      <h2>Conditional Rendering</h2>
       <LogControl />
+      <h2>Lists and Keys</h2>
       <Blog />
+      <h2>Forms</h2>
       <Form />
+      <h2>Lifting State Up</h2>
       <Thermostat />
+      <h2>Composition</h2>
       <SingUpDialog />
-    </div>
+    </Fragment>
   )
 }
 
