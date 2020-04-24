@@ -1,5 +1,5 @@
-import React, { Fragment, Component } from 'react'
-import FormatDate from '../functions/format'
+import React, { Fragment, Component, lazy } from 'react'
+const FormatDate = lazy(()=> import('../functions/format'))
 
 class Clock extends Component {
 
