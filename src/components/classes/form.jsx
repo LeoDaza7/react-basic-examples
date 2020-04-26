@@ -7,7 +7,7 @@ class Form extends Component {
     this.state = { 
       name: '',
       essay: 'these are the initial words of a pretty great essay...',
-      fruit: '',
+      fruit: 'coconut',
       isGoing: true,
       numberOfGuests: 0
      }

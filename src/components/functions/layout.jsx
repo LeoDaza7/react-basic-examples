@@ -1,5 +1,6 @@
 import React, { Fragment, Suspense, lazy } from 'react'
 import ContextConsumer from '../services/context-consumer'
+import ErrorBoundary from '../services/error-boundary'
 
 const Clock = lazy(()=>import('../classes/clock'))
 const Button = lazy(()=>import('../classes/button'))
@@ -9,6 +10,7 @@ const Form = lazy(()=>import('../classes/form'))
 const Thermostat = lazy(()=>import('../classes/thermostat'))
 const SingUpDialog = lazy(()=>import('../classes/signUpDialog'))
 const Theme = lazy(()=>import('../classes/theme'))
+const BuggyComponent = lazy(()=>import('../classes/buggy-component'))
 
 function Layout(props) {
   return (
@@ -24,6 +26,9 @@ function Layout(props) {
             <Thermostat />
             <SingUpDialog />
             <Theme />
+            <ErrorBoundary>
+              <BuggyComponent />
+            </ErrorBoundary>
           </Suspense>
         </div>  
       )}   
