@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 class Button extends Component {
 
@@ -19,9 +19,12 @@ class Button extends Component {
 
   render(){
     return(
-      <button onClick={ this.handleClick }>
-        { this.state.isOn ? 'ON' : 'OFF' }
-      </button>
+      <Fragment>
+        <h1>Handling Events</h1>
+        <button onClick={ this.handleClick }>
+          { this.state.isOn ? 'ON' : 'OFF' }
+        </button>
+      </Fragment>
     )
   }
 

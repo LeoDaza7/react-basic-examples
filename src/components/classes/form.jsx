@@ -66,6 +66,7 @@ class Form extends Component {
   render() { 
     return ( 
       <Fragment>
+        <h1>Forms</h1>
         {/* basic form */}
         <form onSubmit={this.handleNameSubmit}>
           <label>

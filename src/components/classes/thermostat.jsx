@@ -38,6 +38,7 @@ class Thermostat extends Component {
 
     return (
       <Fragment>
+        <h1>Lifting State Up</h1>
         <TemperatureInput 
           scale='c'
           temperature={celcius}

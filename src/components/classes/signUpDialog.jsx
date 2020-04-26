@@ -27,6 +27,7 @@ class SingUpDialog extends Component {
   render() {
     return (
       <Fragment>
+        <h1>Composition</h1>
         <WelcomeDialog />
         <SplitPane
           left={

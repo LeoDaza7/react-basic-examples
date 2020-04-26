@@ -33,8 +33,9 @@ class LogControl extends Component {
     const isLoggedIn_copy = this.state.isLoggedIn
     return (
       <Fragment>
+        <h1>Conditional Rendering</h1>
         <WarningBanner warn={ this.state.showWarning }/>
-        <h2>The user has logged { isLoggedIn_copy ? 'in' : 'out' }.</h2>
+        <h2>The user is logged { isLoggedIn_copy ? 'in' : 'out' }.</h2>
         { isLoggedIn_copy
           ? <LogoutButton onClick={ this.handleLogoutButtonClick } />
           : <LogInButton onClick={ this.handleLoginButtonClick } /> 

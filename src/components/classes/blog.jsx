@@ -16,6 +16,7 @@ class Blog extends Component {
   render() {
     return (
     <Fragment>
+      <h1>Lists and Keys</h1>
       <SideBar content={this.state.posts}/>
     </Fragment>
     )

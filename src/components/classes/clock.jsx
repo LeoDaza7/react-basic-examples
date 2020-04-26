@@ -28,6 +28,7 @@ class Clock extends Component {
   render(){
       return(
         <Fragment>
+          <h1>State and Lifecycle</h1>
           <FormatDate date={ this.state.date }/>
         </Fragment>
       )

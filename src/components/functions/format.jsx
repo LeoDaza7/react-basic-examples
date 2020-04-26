@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function FormatDate(props){
-  return(
-    <h2>It is { props.date.toLocaleTimeString() }.</h2>
-  )
+class FormatDate extends Component {
+  render(){
+    return(
+      <h2>It is { this.props.date.toLocaleTimeString() }.</h2>
+    )
+  }
 }
 
 export default FormatDate
