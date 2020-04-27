@@ -11,6 +11,7 @@ const Thermostat = lazy(()=>import('../classes/thermostat'))
 const SingUpDialog = lazy(()=>import('../classes/signUpDialog'))
 const Theme = lazy(()=>import('../classes/theme'))
 const BuggyComponent = lazy(()=>import('../classes/buggy-component'))
+const Table = lazy(()=>import('../classes/table'))
 
 function Layout(props) {
   return (
@@ -29,6 +30,7 @@ function Layout(props) {
             <ErrorBoundary>
               <BuggyComponent />
             </ErrorBoundary>
+            <Table />
           </Suspense>
         </div>  
       )}   
