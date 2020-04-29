@@ -1,6 +1,7 @@
 import React, { Fragment, Suspense, lazy } from 'react'
 import ContextConsumer from '../services/context-consumer'
 import ErrorBoundary from '../services/error-boundary'
+import Hook from './hook'
 
 const Clock = lazy(()=>import('../classes/clock'))
 const Button = lazy(()=>import('../classes/button'))
@@ -31,6 +32,7 @@ function Layout(props) {
               <BuggyComponent />
             </ErrorBoundary>
             <Table />
+            <Hook />
           </Suspense>
         </div>  
       )}   

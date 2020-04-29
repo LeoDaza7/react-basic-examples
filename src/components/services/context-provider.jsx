@@ -15,7 +15,7 @@ class ContextProvider extends Component {
 
     this.state = {
       theme: themes.light,
-      handleToggleTheme: this.handleToggleTheme 
+      handleToggleTheme: this.handleToggleTheme
     }
     
   }
